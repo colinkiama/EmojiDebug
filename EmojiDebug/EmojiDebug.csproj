@@ -6,8 +6,9 @@
     <Description>Easily write debug messages with emoji.</Description>
     <RepositoryUrl>https://github.com/colinkiama/EmojiDebug</RepositoryUrl>
     <PackageLicenseFile>LICENCE.md</PackageLicenseFile>
-    <PackageReleaseNotes>First Release</PackageReleaseNotes>
+    <PackageReleaseNotes>Fixed bug with incorrect output behaviour</PackageReleaseNotes>
     <PackageId>EmojiDebug.ColinKiama</PackageId>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
