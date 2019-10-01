@@ -31,9 +31,17 @@ namespace EmojiDebug.Helpers
                 new KeyValuePair<DebugEmoji, string>(DebugEmoji.Locked, "🔒" ),
                 new KeyValuePair<DebugEmoji, string>(DebugEmoji.Message, "💬" ),
                 new KeyValuePair<DebugEmoji, string>(DebugEmoji.NoAccess, "🚫"),
-                new KeyValuePair<DebugEmoji, string>(DebugEmoji.BlackFlag, "🏴" ),
-                new KeyValuePair<DebugEmoji, string>(DebugEmoji.BlackFlag, "🏴" ),
-                new KeyValuePair<DebugEmoji, string>(DebugEmoji.BlackFlag, "🏴" ),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Pass, "✔" ),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.RaceFlag, "🏁" ),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Read, "📖"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.RedFlag, "🚩"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Sad, "☹"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Sleep, "💤"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Snapshot, "📸"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Stop, "🛑"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Unsafe, "☢"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Waiting, "⏳"),
+                new KeyValuePair<DebugEmoji, string>(DebugEmoji.Write, "✏"),
             };
         }
     }
