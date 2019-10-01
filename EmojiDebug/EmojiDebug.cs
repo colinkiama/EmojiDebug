@@ -1,5 +1,8 @@
 ﻿using EmojiDebug.Enums;
+using EmojiDebug.Helpers;
 using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace EmojiDebug
@@ -7,6 +10,9 @@ namespace EmojiDebug
     public static class EmojiDebug
     {
         public static OutputMethod OutputLocation = OutputMethod.Debug;
+        internal static ConcurrentDictionary<DebugEmoji, string> EmojiMap = EmojiMapHelper.CreateEmojiMap();
+
+        
 
         public static void Write(DebugEmoji emoji, Exception e) 
         {
