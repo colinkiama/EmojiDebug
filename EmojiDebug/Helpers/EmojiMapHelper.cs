@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EmojiDebug.Helpers
+namespace EmojiDebugSystem.Helpers
 {
     internal static class EmojiMapHelper
     {

@@ -1,11 +1,11 @@
-﻿using EmojiDebug.Enums;
-using EmojiDebug.Helpers;
+﻿using EmojiDebugSystem.Enums;
+using EmojiDebugSystem.Helpers;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace EmojiDebug
+namespace EmojiDebugSystem
 {
     public static class EmojiDebug
     {
@@ -16,10 +16,8 @@ namespace EmojiDebug
 
         public static void Write(DebugEmoji emoji, Exception e)
         {
-            // 1. Create String (with emoji)
             string emojiString = EmojiMap[emoji];
             string emojiSection = $"{emojiString} ";
-            // 2. Determine Output method to run
 
             switch (OutputLocation)
             {
@@ -37,11 +35,9 @@ namespace EmojiDebug
 
         public static void Write(DebugEmoji emoji, string message)
         {
-            // 1. Create String (with emoji)
             string emojiString = EmojiMap[emoji];
             string messageToPrint = $"{emojiString} {message}";
 
-            // 2. Determine Output method to run
 
             switch (OutputLocation)
             {
@@ -58,10 +54,8 @@ namespace EmojiDebug
 
         public static void WriteLine(DebugEmoji emoji, Exception e)
         {
-            // 1. Create String (with emoji)
             string emojiString = EmojiMap[emoji];
             string emojiSection = $"{emojiString} ";
-            // 2. Determine Output method to run
 
             switch (OutputLocation)
             {
@@ -79,11 +73,9 @@ namespace EmojiDebug
 
         public static void WriteLine(DebugEmoji emoji, string message)
         {
-            // 1. Create String (with emoji)
+          
             string emojiString = EmojiMap[emoji];
             string messageToPrint = $"{emojiString} {message}";
-
-            // 2. Determine Output method to run
 
             switch (OutputLocation)
             {

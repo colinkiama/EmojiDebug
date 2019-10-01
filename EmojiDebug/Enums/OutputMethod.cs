@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EmojiDebug.Enums
+namespace EmojiDebugSystem.Enums
 {
     public enum OutputMethod
     {
