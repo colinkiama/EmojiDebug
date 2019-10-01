@@ -7,9 +7,7 @@ namespace TestEnvironment
     {
         static void Main(string[] args)
         {
-
             ThrowEx();
-            
             Console.ReadLine();
         }
 
@@ -21,7 +19,7 @@ namespace TestEnvironment
             }
             catch (Exception ex)
             {
-                EmojiDebug.WriteLine(DebugEmoji.BlackFlag, ex.Message);
+                EmojiDebug.WriteLine(DebugEmoji.Explosion, ex.Message);
             }
 
         }

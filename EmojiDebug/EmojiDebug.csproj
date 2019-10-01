@@ -1,7 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageProjectUrl>https://github.com/colinkiama/EmojiDebug</PackageProjectUrl>
+    <Description>Easily write debug messages with emoji.</Description>
+    <RepositoryUrl>https://github.com/colinkiama/EmojiDebug</RepositoryUrl>
+    <PackageLicenseFile>LICENCE.md</PackageLicenseFile>
+    <PackageReleaseNotes>First Release</PackageReleaseNotes>
+    <PackageId>EmojiDebug.ColinKiama</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENCE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

@@ -21,11 +21,11 @@ namespace EmojiDebugSystem
 
             switch (OutputLocation)
             {
-                case OutputMethod.Console:
+                case OutputMethod.Debug:
                     Debug.Write(emojiSection);
                     Debug.Write(e);
                     break;
-                case OutputMethod.Debug:
+                case OutputMethod.Console:
                     Console.Write(emojiSection);
                     Console.Write(e);
                     break;
@@ -41,10 +41,10 @@ namespace EmojiDebugSystem
 
             switch (OutputLocation)
             {
-                case OutputMethod.Console:
+                case OutputMethod.Debug:
                     Debug.Write(messageToPrint);
                     break;
-                case OutputMethod.Debug:
+                case OutputMethod.Console:
                     Console.Write(messageToPrint);
                     break;
             }
@@ -59,11 +59,11 @@ namespace EmojiDebugSystem
 
             switch (OutputLocation)
             {
-                case OutputMethod.Console:
+                case OutputMethod.Debug:
                     Debug.Write(emojiSection);
                     Debug.WriteLine(e);
                     break;
-                case OutputMethod.Debug:
+                case OutputMethod.Console:
                     Console.Write(emojiSection);
                     Console.WriteLine(e);
                     break;
@@ -79,10 +79,10 @@ namespace EmojiDebugSystem
 
             switch (OutputLocation)
             {
-                case OutputMethod.Console:
+                case OutputMethod.Debug:
                     Debug.WriteLine(messageToPrint);
                     break;
-                case OutputMethod.Debug:
+                case OutputMethod.Console:
                     Console.WriteLine(messageToPrint);
                     break;
             }
