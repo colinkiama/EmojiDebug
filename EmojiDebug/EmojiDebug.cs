@@ -12,43 +12,90 @@ namespace EmojiDebug
         public static OutputMethod OutputLocation = OutputMethod.Debug;
         internal static ConcurrentDictionary<DebugEmoji, string> EmojiMap = EmojiMapHelper.CreateEmojiMap();
 
-        
 
-        public static void Write(DebugEmoji emoji, Exception e) 
+
+        public static void Write(DebugEmoji emoji, Exception e)
         {
-            
+            // 1. Create String (with emoji)
+            string emojiString = EmojiMap[emoji];
+            string emojiSection = $"{emojiString} ";
+            // 2. Determine Output method to run
+
+            switch (OutputLocation)
+            {
+                case OutputMethod.Console:
+                    Debug.Write(emojiSection);
+                    Debug.Write(e);
+                    break;
+                case OutputMethod.Debug:
+                    Console.Write(emojiSection);
+                    Console.Write(e);
+                    break;
+
+            }
         }
 
         public static void Write(DebugEmoji emoji, string message)
         {
             // 1. Create String (with emoji)
-            string emojiString = 
+            string emojiString = EmojiMap[emoji];
+            string messageToPrint = $"{emojiString} {message}";
 
             // 2. Determine Output method to run
-
-            Action<string> OutputMethodToRun;
 
             switch (OutputLocation)
             {
                 case OutputMethod.Console:
-                    OutputMethodToRun = Debug.WriteLine("");
+                    Debug.Write(messageToPrint);
                     break;
                 case OutputMethod.Debug:
-                    break;
-                default:
+                    Console.Write(messageToPrint);
                     break;
             }
 
-            // 3. Print the message
+
         }
 
-        public static void WriteLine(DebugEmoji emoji, Exception e) { }
+        public static void WriteLine(DebugEmoji emoji, Exception e)
+        {
+            // 1. Create String (with emoji)
+            string emojiString = EmojiMap[emoji];
+            string emojiSection = $"{emojiString} ";
+            // 2. Determine Output method to run
+
+            switch (OutputLocation)
+            {
+                case OutputMethod.Console:
+                    Debug.Write(emojiSection);
+                    Debug.WriteLine(e);
+                    break;
+                case OutputMethod.Debug:
+                    Console.Write(emojiSection);
+                    Console.WriteLine(e);
+                    break;
+
+            }
+        }
 
         public static void WriteLine(DebugEmoji emoji, string message)
         {
+            // 1. Create String (with emoji)
+            string emojiString = EmojiMap[emoji];
+            string messageToPrint = $"{emojiString} {message}";
 
+            // 2. Determine Output method to run
+
+            switch (OutputLocation)
+            {
+                case OutputMethod.Console:
+                    Debug.WriteLine(messageToPrint);
+                    break;
+                case OutputMethod.Debug:
+                    Console.WriteLine(messageToPrint);
+                    break;
+            }
         }
 
-        
+
     }
 }
