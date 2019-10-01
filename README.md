@@ -3,6 +3,8 @@ Easily write debug messages with emoji in C#
 
 ![NugetRelease](https://img.shields.io/nuget/v/EmojiDebug.ColinKiama)
 
+Nuget: `EmojiDebug.ColinKiama`
+
 ## Tutorial
 There are 4 methods to use:
 ```csharp
