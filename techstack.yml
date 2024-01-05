@@ -1,7 +1,8 @@
 repo_name: colinkiama/EmojiDebug
 report_id: 27d9a495eb1fa5108899ba3fa2d6a1e3
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-12T07:08:55+00:00'
+timestamp: '2024-01-05T08:49:33+00:00'
 requested_by: colinkiama
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/colinkiama/EmojiDebug
   detection_source: Repo Metadata
 - name: ".NET Core"
   description: An Open Source, General-Purpose Development Platform Maintained by
@@ -28,7 +30,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/6403/default_91fc1f0ee315262794273aa1387eaf8fed8436e6.png
-  detection_source_url: TestEnvironment/TestEnvironment.csproj
+  detection_source_url: https://github.com/colinkiama/EmojiDebug/blob/master/TestEnvironment/TestEnvironment.csproj
   detection_source: TestEnvironment/TestEnvironment.csproj
   last_updated_by: Colin Kiama
   last_updated_on: 2019-10-01 18:31:54.000000000 Z
@@ -43,7 +45,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/11331/asp.net-core.png
-  detection_source_url: EmojiDebug/EmojiDebug.csproj
+  detection_source_url: https://github.com/colinkiama/EmojiDebug/blob/master/EmojiDebug/EmojiDebug.csproj
   detection_source: TestEnvironment/TestEnvironment.csproj
   last_updated_by: Colin Kiama
   last_updated_on: 2019-10-01 18:31:54.000000000 Z
@@ -55,6 +57,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/colinkiama/EmojiDebug
   detection_source: Repo Metadata
 - name: Visual Studio
   description: State-of-the-art tools and services that you can use to create great
@@ -65,6 +68,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/colinkiama/EmojiDebug/blob/master/EmojiDebug.sln
   detection_source: EmojiDebug.sln
   last_updated_by: Colin Kiama
   last_updated_on: 2019-10-01 15:29:29.000000000 Z
